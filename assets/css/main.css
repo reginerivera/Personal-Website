@@ -22,7 +22,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #c7baff; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #ae9dfc; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #a557e6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -941,6 +941,34 @@ section .container,
   border: 2px solid var(--accent-color);
 }
 
+/* Carousel transition speed */
+.carousel-inner {
+  top: 15px;
+  transition: transform 1s ease-in-out; /* Smooth transition for the sliding */
+}
+
+/* Move carousel indicators below the image */
+.carousel-indicators {
+  bottom: -30px; /* Adjust this value to your preference */
+}
+
+.cert-title {
+  top: 15px;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center; /* Center-aligns the text */
+  margin-top: 20px; /* Adds some spacing above */
+  margin-bottom: 20px; /* Adds some spacing below */
+}
+
+/* 🎨 Custom styles for the carousel controls and other elements */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none; /* Hide the controls if you want it fully automated */
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -1275,7 +1303,7 @@ section .container,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: #000000;
   background-color: var(--surface-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
